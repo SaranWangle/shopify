@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.json.simple.JSONObject;
 
+import Utils.WriteTo;
+
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -43,8 +45,9 @@ public class AddingValuesviaJSONObject {
 	public void addValues() {
 		baseURI="http://localhost:3000/";
 		JSONObject request = new JSONObject();
+		WriteTo.LogInfo("Add values step one");
 		request.put("ShopID", 3);	
-		request.put("Name", "RIDDHU KEEP Quite");
+		request.put("Name", "FoodBasics");
 
 		given().
 			contentType(ContentType.JSON).accept(ContentType.JSON).

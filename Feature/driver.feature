@@ -24,7 +24,7 @@ Given I add the values through JSON object
 
 Scenario: All CRUD request processing
 Given I add values to shop array
-When update the value for shop array
-Then replace the value for the array
-And finally get all the value of the shop available
-And I delete values from shop array
+#When update the value for shop array
+#Then replace the value for the array
+#And finally get all the value of the shop available
+#And I delete values from shop array

@@ -2,6 +2,7 @@ package ShopManagement;
 
 import org.json.simple.JSONObject;
 
+import Utils.WriteTo;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -33,6 +34,7 @@ public class CRUDOperations {
 	public void PostData() {
 		baseURI = "http://localhost:3000/";
 		JSONObject request = new JSONObject();
+		WriteTo.Log("Start of POST DATA Function");
 		/***
 		 * This should be paramaterized via excel input
 		 */
